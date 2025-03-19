@@ -21,7 +21,7 @@ export const LawyerLogin = () => {
 
       if (res.status === 200) {
         toast.success('Login Successfully', {
-                  position: "top-center",
+                  position: "top-left",
                   autoClose: 5000,
                   hideProgressBar: false,
                   closeOnClick: false,
@@ -40,7 +40,7 @@ export const LawyerLogin = () => {
       }
     } catch (error) {
       toast.error('  Invalid Credentials !!', {
-              position: "top-center",
+              position: "top-left",
               autoClose: 5000,
               hideProgressBar: false,
               closeOnClick: false,
@@ -73,7 +73,7 @@ export const LawyerLogin = () => {
   return (
     <div>
       <ToastContainer
-        position="top-center"
+        position="top-left"
         autoClose={5000}
         hideProgressBar={false}
         newestOnTop={false}
