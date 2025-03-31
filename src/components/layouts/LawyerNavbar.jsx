@@ -549,7 +549,7 @@ export const LawyerNavbar = ({ toggleSidebar }) => {
         </ul>
 
         <ul className="navbar-nav ms-auto">
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <a
               className="nav-link"
               data-widget="navbar-search"
@@ -558,7 +558,7 @@ export const LawyerNavbar = ({ toggleSidebar }) => {
             >
               <i className="bi bi-search" />
             </a>
-          </li>
+          </li> */}
 
          
 

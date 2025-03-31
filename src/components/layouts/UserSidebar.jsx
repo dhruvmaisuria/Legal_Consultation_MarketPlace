@@ -134,6 +134,7 @@ import React, { useState } from "react";
 import { UserNavbar } from "./UserNavbar";
 import { Link, Outlet } from "react-router-dom";
 
+
 export const UserSidebar = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(true);
 
@@ -144,6 +145,7 @@ export const UserSidebar = () => {
   return (
     <>
       <UserNavbar toggleSidebar={toggleSidebar} />
+     
       <aside
           className={`app-sidebar bg-body-secondary shadow ${
             isSidebarOpen ? "open" : "d-none"
@@ -151,15 +153,15 @@ export const UserSidebar = () => {
           data-bs-theme="dark"
         >
         <div className="sidebar-brand">
-          <a href="./index.html" className="brand-link">
+          <Link to="/" className="brand-link">
             <img
               src="../../dist/assets/img/AdminLTELogo.png"
               // alt="AdminLTE Logo"
               className="brand-image opacity-75 shadow"
             />
 
-            <span className="brand-text fw-light">AdminLTE 4</span>
-          </a>
+            <span className="brand-text fw-light">Legal-Consultation</span>
+          </Link>
         </div>
 
         <div
@@ -185,13 +187,13 @@ export const UserSidebar = () => {
               data-accordion="false"
             >
               <li className="nav-item menu-open">
-                <a href="#" className="nav-link active">
+                <Link to="/" className="nav-link active">
                   <i className="nav-icon bi bi-speedometer" />
                   <p>
                     Dashboard
                     <i className="nav-arrow bi bi-chevron-right" />
                   </p>
-                </a>
+                </Link>
                 <ul className="nav nav-treeview">
                 <li className="nav-item">
                     <Link to="/user/addAppointment" className="nav-link active">
@@ -206,18 +208,18 @@ export const UserSidebar = () => {
                      </Link>
                    </li>
                   <li className="nav-item">
-                    <a href="./index3.html" className="nav-link">
+                    <Link to="/user/addQuery" className="nav-link">
                       <i className="nav-icon bi bi-circle" />
-                      <p>Dashboard v3</p>
-                    </a>
+                      <p> Add Legal Query</p>
+                    </Link>
                   </li>
                 </ul>
               </li>
               <li className="nav-item">
-                <a href="./generate/theme.html" className="nav-link">
+                <Link to="/user/viewMyQueries" className="nav-link">
                   <i className="nav-icon bi bi-palette" />
-                  <p>Theme Generate</p>
-                </a>
+                  <p>View My Queries</p>
+                </Link>
               </li>
               <li className="nav-item">
                 <a href="#" className="nav-link">

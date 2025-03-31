@@ -105,7 +105,7 @@ export const LawyerLogin = () => {
             </Form.Group>
 
             <div className="text-center mb-2">
-              <Link to="/error">Forgot password?</Link>
+              <Link to="/lawyerForgotPassword">Forgot password?</Link>
             </div>
 
             {/* Submit Button */}

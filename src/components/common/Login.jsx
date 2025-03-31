@@ -258,7 +258,7 @@ export const Login = () => {
             </Form.Group>
 
             <div className="text-center mb-2">
-              <Link to="/error">Forgot password?</Link>
+              <Link to="/forgotPassword">Forgot password?</Link>
             </div>
 
             {/* Submit Button */}
