@@ -503,7 +503,7 @@ export const LawyerNavbar = ({ toggleSidebar }) => {
   };
   
   return (
-    <nav className="app-header navbar navbar-expand bg-body">
+    <nav style={{background:" linear-gradient(135deg, #2c3e50, #4ca1af)"}} className="app-header navbar navbar-expand bg-body ">
       {/*begin::Container*/}
       <ToastContainer
         position="top-center"
@@ -537,12 +537,12 @@ export const LawyerNavbar = ({ toggleSidebar }) => {
             </a>
           </li>
           <li className="nav-item d-none d-md-block">
-            <a href="#" className="nav-link">
+            <a style={{color:"white"}} href="#" className="nav-link">
               Home
             </a>
           </li>
           <li className="nav-item d-none d-md-block">
-            <a href="#" className="nav-link">
+            <a style={{color:"white"}} href="#" className="nav-link">
               Contact
             </a>
           </li>

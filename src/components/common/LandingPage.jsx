@@ -271,10 +271,10 @@ export const LandingPage = () => {
                   <a className="nav-link" href="#about">About</a>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/Login">Login</Link>
+                  <Link className="nav-link" to="/selectLoginRole">Login</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/signup">SignUp</Link>
+                  <Link className="nav-link" to="/selectRole">SignUp</Link>
                 </li>
               </ul>
             </div>

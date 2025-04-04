@@ -60,7 +60,7 @@ export const ViewMyQueries = () => {
                 <tbody>
                     {queries?.map((query) => (
                         <tr key={query._id}>
-                            <td>{query.createdAt}</td>
+                            <td>{new Date(query.createdAt).toLocaleDateString()}</td>
                             <td>{query.queryText}</td>
                             <td>{query.response || "N/A"}</td>
                             <td>{query.status}</td>

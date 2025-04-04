@@ -83,7 +83,7 @@ export const LawyerSignup = () => {
         },
         specializationValidator: { required: "Specialization is required *" },
         experienceValidator: { required: "Experience is required *" },
-        ratingValidator: { required: "Rating is required *" },
+        // ratingValidator: { required: "Rating is required *" },
         imageValidator: { required: "Image is required *" },
         checkBoxValidator: { required: "You must accept the terms and conditions" }
     };
@@ -168,11 +168,11 @@ export const LawyerSignup = () => {
                             <span className="text-danger">{errors.experience?.message}</span>
                         </Form.Group>
 
-                        <Form.Group className='mb-2'>
+                        {/* <Form.Group className='mb-2'>
                             <Form.Label>Rating</Form.Label>
                             <Form.Control type='decimal' {...register("rating", ValidationSchema.ratingValidator)} />
                             <span className="text-danger">{errors.rating?.message}</span>
-                        </Form.Group>
+                        </Form.Group> */}
 
                         <Form.Group className='mb-2'>
                             <Form.Label>Select Your Image URL</Form.Label>

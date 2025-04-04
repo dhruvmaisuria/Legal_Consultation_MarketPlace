@@ -121,7 +121,7 @@ export const ViewAppointments = () => {
         <tbody>
           {appointments?.map((appo) => (
             <tr key={appo._id}>
-              <td>{appo.appointmentDate}</td>
+              <td>{new Date(appo.appointmentDate).toLocaleDateString()}</td>
               <td>{appo.appointmentTime}</td>
               <td>{appo.consultationType}</td>
               <td>{appo.problemCategory}</td>

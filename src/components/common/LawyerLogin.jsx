@@ -35,7 +35,7 @@ export const LawyerLogin = () => {
         localStorage.setItem("role", res.data.data.roleId.name);
 
         if (res.data.data.roleId.name === "lawyer") {
-        setTimeout( () =>{navigate("/lawyer")},2500);
+        setTimeout( () =>{navigate("/lawyer/lawyerDashBoard")},2500);
         }
       }
     } catch (error) {

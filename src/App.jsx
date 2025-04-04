@@ -10,7 +10,6 @@ import { Route, Routes, useLocation } from 'react-router-dom'
 import { Login } from './components/common/Login'
 
 import { UserSidebar } from './components/layouts/UserSidebar'
-import { UserProfile } from './components/user/UserProfile'
 import { LawyerSidebar } from './components/layouts/LawyerSidebar'
 import { Signup } from './components/common/Signup'
 import axios from 'axios'
@@ -34,6 +33,15 @@ import LawyerPrivateRoute from './hooks/LawyerPrivateRoutes'
 import { AddQuery } from './components/user/AddQuery'
 import { ViewMyQueries } from './components/user/ViewMyQueries'
 import { ViewAllQueries } from './components/lawyer/ViewAllQueries'
+import { AddReview } from './components/user/AddReview'
+import { ViewMyReviews } from './components/user/ViewMyReviews'
+import { UserDashBoard } from './components/user/UserDashBoard'
+import { LawyerDashBoard } from './components/lawyer/LawyerDashBoard'
+import { SelectRole } from './components/common/SelectRole'
+import { SelectLoginRole } from './components/common/SelectLoginRole'
+
+
+
 
 
 
@@ -48,6 +56,10 @@ const shouldApplyAppWrapper = (pathname) => {
     '/lawyerForgotPassword',
     '/contactUs',
     '/lawyerResetPassword',
+    '/selectRole',
+    '/selectLoginRole'
+    
+    
 
   ];
 
@@ -94,22 +106,29 @@ function App() {
         <Route path='/forgotPassword' element={<ForgotPassword/>}></Route>
         <Route path='/lawyerForgotPassword' element={<LawyerForgotPassword/>}></Route>
         <Route path='/contactUs' element={<ContactUs/>}></Route>
+        <Route path='/selectRole' element={<SelectRole/>}></Route>
+        <Route path='/selectLoginRole' element={<SelectLoginRole/>}></Route>
+        
 
         <Route path="" element={<UserPrivateRoute/>}>
-        <Route path='/user' element={<UserSidebar />}>
+        <Route path='/user' element={<UserSidebar/>}>
 
-          <Route path='profile' element={<UserProfile />}></Route>
+          <Route path='userDashBoard' element={<UserDashBoard />}></Route>
           <Route path='addAppointment' element={<AddAppointment/>}></Route>
           <Route path='addQuery' element={<AddQuery/>}></Route>
+          <Route path='addReview' element={<AddReview/>}></Route>
           <Route path='viewMyAppointments' element={<ViewMyAppointments/>}></Route>
           <Route path='viewMyQueries' element={<ViewMyQueries/>}></Route>
+          <Route path='viewMyReviews' element={<ViewMyReviews/>}></Route>
           <Route path='updateAppointment/:id' element={<UpdateMyAppointment/>}></Route>
+
         </Route>
         </Route>
         <Route path='' element={<LawyerPrivateRoute/>}>
         <Route path='/lawyer' element={<LawyerSidebar />}>
           <Route path='viewAppointments' element={<ViewAppointments/>}></Route>
           <Route path='viewAllQueries' element={<ViewAllQueries/>}></Route>
+          <Route path='lawyerDashBoard' element={<LawyerDashBoard/>}></Route>
           
         </Route>
         </Route>
