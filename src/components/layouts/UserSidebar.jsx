@@ -57,13 +57,13 @@ export const UserSidebar = () => {
               data-accordion="false"
             >
               <li className="nav-item menu-open">
-                <Link to="/" className="nav-link active">
+                {/* <Link to="/" className="nav-link active">
                   <i className="nav-icon bi bi-speedometer" />
                   <p>
                     Dashboard
                     <i className="nav-arrow bi bi-chevron-right" />
                   </p>
-                </Link>
+                </Link> */}
                 <ul className="nav nav-treeview">
                 <li className="nav-item">
                     <Link to="/user/addAppointment" className="nav-link active">
@@ -104,13 +104,25 @@ export const UserSidebar = () => {
                     </Link>
               </li> 
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                    <Link to="/user/viewAllLawyers" className="nav-link">
+                      <i className="nav-icon bi bi-circle" />
+                      <p>View All Lawyers</p>
+                    </Link>
+              </li>
+              <li className="nav-item">
+                    <Link to="/user/viewMyPayments" className="nav-link">
+                      <i className="nav-icon bi bi-circle" />
+                      <p>My Payments</p>
+                    </Link>
+              </li>
+              <li className="nav-item">
+                {/* <a href="#" className="nav-link">
                   <i className="nav-icon bi bi-box-seam-fill" />
                   <p>
                     weights
                     <i className="nav-arrow bi bi-chevron-right" />
                   </p>
-                </a>
+                </a> */}
                 <ul className="nav nav-treeview">
                   <li className="nav-item">
                     <a href="./widgets/small-box.html" className="nav-link">

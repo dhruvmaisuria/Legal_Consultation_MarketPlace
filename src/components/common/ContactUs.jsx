@@ -21,7 +21,7 @@ export const ContactUs = () => {
 
       if (res.status === 200) {
         toast.success('Message sent successfully!', { transition: Bounce, theme: "dark" });
-        setTimeout(() => navigate("/user"), 2500);
+        setTimeout(() => navigate("/"), 2500);
       }
     } catch (error) {
       setisLoading(false);

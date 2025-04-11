@@ -39,6 +39,12 @@ import { UserDashBoard } from './components/user/UserDashBoard'
 import { LawyerDashBoard } from './components/lawyer/LawyerDashBoard'
 import { SelectRole } from './components/common/SelectRole'
 import { SelectLoginRole } from './components/common/SelectLoginRole'
+import ViewAllLawyers from './components/user/ViewAllLawyers'
+import LawyerProfile from './components/user/LawyerProfile'
+import ViewMyPayments from './components/user/ViewMyPayments'
+import AdminDashboard from './components/admin/AdminDashBoard'
+
+
 
 
 
@@ -110,6 +116,9 @@ function App() {
         <Route path='/selectLoginRole' element={<SelectLoginRole/>}></Route>
         
 
+        <Route path='/admin' element={<AdminDashboard/>}>
+        </Route>
+
         <Route path="" element={<UserPrivateRoute/>}>
         <Route path='/user' element={<UserSidebar/>}>
 
@@ -121,6 +130,10 @@ function App() {
           <Route path='viewMyQueries' element={<ViewMyQueries/>}></Route>
           <Route path='viewMyReviews' element={<ViewMyReviews/>}></Route>
           <Route path='updateAppointment/:id' element={<UpdateMyAppointment/>}></Route>
+          <Route path='viewAllLawyers' element={<ViewAllLawyers/>}></Route>
+          <Route path='lawyer/:lawyerId' element={<LawyerProfile/>}></Route>
+          <Route path='viewMyPayments' element={<ViewMyPayments/>}></Route>
+
 
         </Route>
         </Route>

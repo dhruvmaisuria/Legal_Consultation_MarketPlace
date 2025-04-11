@@ -3,7 +3,7 @@
 import React from "react";
 import hamburgermenu from "../../assets/images/hamburgermenu.png";
 import { Bounce, toast, ToastContainer } from "react-toastify";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const UserNavbar = ({ toggleSidebar }) => {
 
@@ -22,11 +22,11 @@ export const UserNavbar = ({ toggleSidebar }) => {
     });
   
     setTimeout(() => {
-      navigate("/Login"); // Redirect to login page after toast
+      navigate("/"); // Redirect to login page after toast
     }, 2500);
   };
   return (
-    <nav className="app-header navbar navbar-expand bg-body">
+    <nav style={{background:" linear-gradient(135deg, #2c3e50, #4ca1af)"}} className="app-header navbar navbar-expand bg-body">
       <ToastContainer
               position="top-center"
               autoClose={5000}
@@ -60,9 +60,9 @@ export const UserNavbar = ({ toggleSidebar }) => {
             </a>
           </li>
           <li className="nav-item d-none d-md-block">
-            <a href="#" className="nav-link">
-              Home
-            </a>
+            <Link to="/user/userDashBoard" className="nav-link">
+              Home  
+            </Link>
           </li>
           <li className="nav-item d-none d-md-block">
             <a href="#" className="nav-link">
