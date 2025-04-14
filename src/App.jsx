@@ -42,7 +42,17 @@ import { SelectLoginRole } from './components/common/SelectLoginRole'
 import ViewAllLawyers from './components/user/ViewAllLawyers'
 import LawyerProfile from './components/user/LawyerProfile'
 import ViewMyPayments from './components/user/ViewMyPayments'
-import AdminDashboard from './components/admin/AdminDashBoard'
+
+import AdminAppointmentsCalendar from './components/admin/AdminAppointmentsCalendar'
+import { AdminSideBar } from './components/layouts/AdminSideBar'
+import AdminDashBoard from './components/admin/AdminDashBoard'
+import AdminUserManagement from './components/admin/AdminUserManagement'
+import AdminLawyerManagement from './components/admin/AdminLawyerManagement'
+import LawyerProfileForAdmin from './components/admin/LawyerProfileForAdmin'
+import MyProfile from './components/lawyer/MyProfile'
+import PaymentHistory from './components/admin/PaymentHistory'
+import { AdminLogin } from './components/common/AdminLogin'
+import AdminReviewManagement from './components/admin/AdminReviewManagement'
 
 
 
@@ -63,8 +73,8 @@ const shouldApplyAppWrapper = (pathname) => {
     '/contactUs',
     '/lawyerResetPassword',
     '/selectRole',
-    '/selectLoginRole'
-    
+    '/selectLoginRole',
+    '/adminLogin'
     
 
   ];
@@ -114,10 +124,19 @@ function App() {
         <Route path='/contactUs' element={<ContactUs/>}></Route>
         <Route path='/selectRole' element={<SelectRole/>}></Route>
         <Route path='/selectLoginRole' element={<SelectLoginRole/>}></Route>
+        <Route path='/adminLogin' element={<AdminLogin/>}></Route>
         
 
-        <Route path='/admin' element={<AdminDashboard/>}>
+        <Route path='/admin' element={<AdminSideBar/>}>
+        <Route path='AdminDashBoard' element={<AdminDashBoard/>}></Route>
+        <Route path='calendar' element={<AdminAppointmentsCalendar/>}></Route>
+        <Route path='userManagement' element={<AdminUserManagement/>}></Route>
+        <Route path='lawyerManagement' element={<AdminLawyerManagement/>}></Route>
+        <Route path='lawyerProfile/:lawyerId' element={<LawyerProfileForAdmin/>}></Route>
+        <Route path='getAllPayments' element={<PaymentHistory/>}></Route>
+        <Route path='getAllReviews' element={<AdminReviewManagement/>}></Route>
         </Route>
+        
 
         <Route path="" element={<UserPrivateRoute/>}>
         <Route path='/user' element={<UserSidebar/>}>
@@ -142,6 +161,7 @@ function App() {
           <Route path='viewAppointments' element={<ViewAppointments/>}></Route>
           <Route path='viewAllQueries' element={<ViewAllQueries/>}></Route>
           <Route path='lawyerDashBoard' element={<LawyerDashBoard/>}></Route>
+          <Route path='myProfile' element={<MyProfile/>}></Route>
           
         </Route>
         </Route>
@@ -150,7 +170,7 @@ function App() {
           <Route path='supportlogin' element={<SupportLogin />}></Route>
         </Route>
         
-      </Routes>
+      </Routes> 
 
 
     </div>

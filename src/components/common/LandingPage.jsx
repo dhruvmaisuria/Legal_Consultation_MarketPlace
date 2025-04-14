@@ -247,7 +247,7 @@ export const LandingPage = () => {
         <div className="container-fluid">
           <nav className="navbar navbar-expand-lg custom_nav-container">
             <a className="navbar-brand " href="#">
-              <span className='ml-3'>LEGAL-CONSULTATION</span>
+              <span className=''>LEGAL-CONSULTATION</span>
             </a>
             <button
               className="navbar-toggler"
@@ -289,7 +289,7 @@ export const LandingPage = () => {
               <div className="container">
                 <div className="row">
                   <div className="col-md-6">
-                    <div className="detail_box ml-5">
+                    <div className="detail_box">
                       <h1>Legal Consultation Marketplace</h1>
                       <p>
                       Join a platform where finding the right legal expert is seamless.

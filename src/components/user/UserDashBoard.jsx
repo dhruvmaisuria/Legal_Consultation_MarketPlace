@@ -212,7 +212,7 @@ export const UserDashBoard = () => {
           <h2>Get in Touch</h2>
           <p>
             Have questions or need assistance? Email us at{" "}
-            <Link to="mailto:dhruvmaisuria3010@gmail.com">dhruvmaisuria3010@gmail.com</Link>
+            <Link to="mailto:legalconsultationteam@gmail.com">legalconsultationteam@gmail.com</Link>
           </p>
           <p>Join us in making informed legal decisions with confidence.</p>
         </div>

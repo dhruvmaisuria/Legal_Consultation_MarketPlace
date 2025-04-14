@@ -23,7 +23,7 @@ export const SelectRole = () => {
     setTimeout(() => {
       if (role === "user") navigate("/signup");
       else if (role === "lawyer") navigate("/lawyerSignup");
-      else if (role === "admin") navigate("/adminSignup");
+      
       setIsLoading(false);
     }, 1000);
   };
@@ -43,7 +43,6 @@ export const SelectRole = () => {
                 <option value="">-- Choose Role --</option>
                 <option value="user">User</option>
                 <option value="lawyer">Lawyer</option>
-                <option value="admin">Admin</option>
               </Form.Select>
             </Form.Group>
 

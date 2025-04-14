@@ -11,7 +11,7 @@
 
 
 
-// export const LawyerNavbar = ({ toggleSidebar }) => {
+// export const AdminNavBar = ({ toggleSidebar }) => {
 
 //   const navigate = useNavigate();
 //   const handleLogout = () => {
@@ -67,7 +67,7 @@
 //             </a>
 //           </li>
 //           <li className="nav-item d-none d-md-block">
-//             <Link style={{color:"white"}} to="lawyer/lawyerDashBoard" className="nav-link">
+//             <Link style={{color:"white"}} to="/admin/adminDashBoard" className="nav-link">
 //               Home
 //             </Link>
 //           </li>
@@ -118,12 +118,13 @@
 
 
 
+
 import React from "react";
 import hamburgermenu from "../../assets/images/hamburgermenu.png";
 import { Bounce, toast, ToastContainer } from "react-toastify";
 import { Link, useNavigate } from "react-router-dom";
 
-export const LawyerNavbar = ({ toggleSidebar, isSidebarOpen }) => {
+export const AdminNavBar = ({ toggleSidebar, isSidebarOpen }) => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -169,7 +170,7 @@ export const LawyerNavbar = ({ toggleSidebar, isSidebarOpen }) => {
               />
             </button>
           )}
-          <Link className="navbar-brand text-white fw-bold" to="/lawyer/lawyerDashBoard">
+          <Link className="navbar-brand text-white fw-bold" to="/admin/adminDashBoard">
             Legal Consultation
           </Link>
         </div>
@@ -177,7 +178,7 @@ export const LawyerNavbar = ({ toggleSidebar, isSidebarOpen }) => {
         {/* Desktop Menu */}
         <ul className="navbar-nav d-none d-lg-flex align-items-center">
           <li className="nav-item">
-            <Link className="nav-link text-white" to="/lawyer/lawyerDashBoard">
+            <Link className="nav-link text-white" to="/admin/adminDashBoard">
               Home
             </Link>
           </li>
@@ -224,7 +225,7 @@ export const LawyerNavbar = ({ toggleSidebar, isSidebarOpen }) => {
             }}
           >
             <li>
-              <Link className="dropdown-item text-white" to="/lawyer/lawyerBashBoard">
+              <Link className="dropdown-item text-white" to="/admin/adminDashBoard">
                 Home
               </Link>
             </li>

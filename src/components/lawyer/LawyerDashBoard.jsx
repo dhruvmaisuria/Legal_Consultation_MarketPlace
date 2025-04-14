@@ -29,7 +29,7 @@ export const LawyerDashBoard = () => {
           <p>
           Have questions about managing your appointments or growing your legal practice?  
           Reach out to us at{" "}
-            <Link to="mailto:dhruvmaisuria3010@gmail.com">dhruvmaisuria3010@gmail.com</Link>
+            <Link to="mailto:legalconsultationteam@gmail.com">legalconsultationteam@gmail.com</Link>
           </p>
           <p>We're here to support your journey in providing expert legal services.</p>
         </div>

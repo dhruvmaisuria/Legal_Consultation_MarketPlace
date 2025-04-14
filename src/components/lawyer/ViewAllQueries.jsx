@@ -64,7 +64,9 @@ export const ViewAllQueries = () => {
       <tbody>
         {queries?.map((query) => (
           <tr key={query._id}>
-            <td>{query.userIdfirstName || "Unknown User"}</td>
+            <td>{query.userId
+                      ? `${query.userId.firstName} ${query.userId.lastName}`
+                      : "Unknown User"}</td>
             <td>{query.queryText}</td>
             <td>
               <span className={`badge ${query.status === "Answered" ? "bg-success" : "bg-warning"}`}>

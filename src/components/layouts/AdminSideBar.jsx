@@ -1,28 +1,32 @@
 
 
+
+
 // import React, { useState } from "react";
-// import { UserNavbar } from "./UserNavbar";
 // import { Link, Outlet } from "react-router-dom";
+// import { AdminNavBar } from "./AdminNavbar";
 
 
-// export const UserSidebar = () => {
+// export const AdminSideBar = () => {
+//   //for closing sidebar...
 //   const [isSidebarOpen, setSidebarOpen] = useState(true);
+  
 
 //   const toggleSidebar = () => {
 //     console.log("toggleSidebar");
 //     setSidebarOpen(!isSidebarOpen);
 //   };
+
 //   return (
 //     <>
-//       <UserNavbar toggleSidebar={toggleSidebar} />
-     
+//       <AdminNavBar toggleSidebar={toggleSidebar}/>
 //       <aside
-//           className={`app-sidebar bg-body-secondary shadow ${
-//             isSidebarOpen ? "open" : "d-none"
-//           }`}
-//           data-bs-theme="dark"
-//         >
-//         {/* <div className="sidebar-brand">
+//         className={`app-sidebar bg-body-secondary shadow ${
+//           isSidebarOpen ? "open" : "d-none"
+//         }`}
+//         data-bs-theme="dark"
+//       >
+//         <div className="sidebar-brand">
 //           <Link to="/" className="brand-link">
 //             <img
 //               src="../../dist/assets/img/AdminLTELogo.png"
@@ -32,22 +36,7 @@
 
 //             <span className="brand-text fw-light">Legal-Consultation</span>
 //           </Link>
-//         </div> */}
-
-// <div className="sidebar-brand d-flex justify-content-between align-items-center px-3 py-2">
-//   <Link to="/" className="brand-link d-flex align-items-center">
-    
-//     <span className="brand-text fw-light">Legal-Consultation</span>
-//   </Link>
-//   <button
-//     className="btn btn-sm btn-light ms-2"
-//     onClick={toggleSidebar}
-//     style={{ fontSize: "16px", lineHeight: "1", borderRadius: "50%" }}
-//   >
-//     &times;
-//   </button>
-// </div>
-
+//         </div>
 
 //         <div
 //           className=""
@@ -72,72 +61,41 @@
 //               data-accordion="false"
 //             >
 //               <li className="nav-item menu-open">
-//                 {/* <Link to="/" className="nav-link active">
+//                 <Link to="/" className="nav-link active">
 //                   <i className="nav-icon bi bi-speedometer" />
 //                   <p>
-//                     Dashboard
+//                     DashBoard
 //                     <i className="nav-arrow bi bi-chevron-right" />
 //                   </p>
-//                 </Link> */}
+//                 </Link>
 //                 <ul className="nav nav-treeview">
-//                 <li className="nav-item">
-//                     <Link to="/user/addAppointment" className="nav-link active">
-//                        <i className="nav-icon bi bi-circle" />
-//                        <p>Book Appointment</p>
-//                      </Link>
-//                    </li>
-//                    <li className="nav-item">
-//                     <Link to="/user/viewMyAppointments" className="nav-link active">
-//                        <i className="nav-icon bi bi-circle" />
-//                        <p>My Appointments</p>
-//                      </Link>
-//                    </li>
 //                   <li className="nav-item">
-//                     <Link to="/user/addQuery" className="nav-link">
-//                       <i className="nav-icon bi bi-circle" />
-//                       <p> Add Legal Query</p>
+//                     <Link to="/admin/calendar" className="nav-link active">
+//                       <i className="nav-icon bi bi-speedometer" />
+//                       <p>
+//                         View All Appointments
+//                         <i className="nav-arrow bi bi-chevron-right" />
+//                       </p>
 //                     </Link>
 //                   </li>
 //                 </ul>
 //               </li>
+              
 //               <li className="nav-item">
-//                 <Link to="/user/viewMyQueries" className="nav-link">
-//                   <i className="nav-icon bi bi-palette" />
-//                   <p>View My Queries</p>
-//                 </Link>
-//               </li>
-//               <li className="nav-item">
-//                     <Link to="/user/addReview" className="nav-link">
-//                       <i className="nav-icon bi bi-circle" />
-//                       <p>Add Review</p>
-//                     </Link>
-//               </li>
-//               <li className="nav-item">
-//                     <Link to="/user/viewMyReviews" className="nav-link">
-//                       <i className="nav-icon bi bi-circle" />
-//                       <p>View My Reviews</p>
-//                     </Link>
-//               </li> 
-//               <li className="nav-item">
-//                     <Link to="/user/viewAllLawyers" className="nav-link">
-//                       <i className="nav-icon bi bi-circle" />
-//                       <p>View All Lawyers</p>
-//                     </Link>
-//               </li>
-//               <li className="nav-item">
-//                     <Link to="/user/viewMyPayments" className="nav-link">
-//                       <i className="nav-icon bi bi-circle" />
-//                       <p>My Payments</p>
-//                     </Link>
-//               </li>
-//               <li className="nav-item">
-//                 {/* <a href="#" className="nav-link">
+//                 <Link to="/admin/userManagement" className="nav-link">
 //                   <i className="nav-icon bi bi-box-seam-fill" />
 //                   <p>
-//                     weights
+//                     View All Users
 //                     <i className="nav-arrow bi bi-chevron-right" />
 //                   </p>
-//                 </a> */}
+//                 </Link>
+//                 <Link to="/admin/lawyerManagement" className="nav-link">
+//                   <i className="nav-icon bi bi-box-seam-fill" />
+//                   <p>
+//                     View All Lawyers
+//                     <i className="nav-arrow bi bi-chevron-right" />
+//                   </p>
+//                 </Link>
 //                 <ul className="nav nav-treeview">
 //                   <li className="nav-item">
 //                     <a href="./widgets/small-box.html" className="nav-link">
@@ -173,10 +131,10 @@
 
 
 import React, { useState } from "react";
-import { UserNavbar } from "./UserNavbar";
+import { AdminNavBar } from "./AdminNavBar";
 import { Link, Outlet } from "react-router-dom";
 
-export const UserSidebar = () => {
+export const AdminSideBar = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false); // sidebar is initially closed
 
   const toggleSidebar = () => {
@@ -186,7 +144,7 @@ export const UserSidebar = () => {
   return (
     <>
       {/* Pass isSidebarOpen as prop to hide hamburger when sidebar is open */}
-      <UserNavbar toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />
+      <AdminNavBar toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />
 
       <aside
         className={`app-sidebar bg-body-secondary shadow ${
@@ -232,54 +190,36 @@ export const UserSidebar = () => {
               <li className="nav-item menu-open">
                 <ul className="nav nav-treeview">
                   <li className="nav-item">
-                    <Link to="/user/addAppointment" className="nav-link active">
+                    <Link to="/admin/userManagement" className="nav-link active">
                       <i className="nav-icon bi bi-circle" />
-                      <p>Book Appointment</p>
+                      <p>View All Users</p>
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/user/viewMyAppointments" className="nav-link active">
+                    <Link to="/admin/lawyerManagement" className="nav-link active">
                       <i className="nav-icon bi bi-circle" />
-                      <p>My Appointments</p>
+                      <p>View All Lawyers</p>
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/user/addQuery" className="nav-link">
+                    <Link to="/admin/calendar" className="nav-link">
                       <i className="nav-icon bi bi-circle" />
-                      <p> Add Legal Query</p>
+                      <p>View All Appointments</p>
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/admin/getAllPayments" className="nav-link">
+                      <i className="nav-icon bi bi-circle" />
+                      <p>Payment History</p>
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/admin/getAllReviews" className="nav-link">
+                      <i className="nav-icon bi bi-circle" />
+                      <p>All Reviews</p>
                     </Link>
                   </li>
                 </ul>
-              </li>
-              <li className="nav-item">
-                <Link to="/user/viewMyQueries" className="nav-link">
-                  <i className="nav-icon bi bi-palette" />
-                  <p>View My Queries</p>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/user/addReview" className="nav-link">
-                  <i className="nav-icon bi bi-circle" />
-                  <p>Add Review</p>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/user/viewMyReviews" className="nav-link">
-                  <i className="nav-icon bi bi-circle" />
-                  <p>View My Reviews</p>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/user/viewAllLawyers" className="nav-link">
-                  <i className="nav-icon bi bi-circle" />
-                  <p>View All Lawyers</p>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/user/viewMyPayments" className="nav-link">
-                  <i className="nav-icon bi bi-circle" />
-                  <p>My Payments</p>
-                </Link>
               </li>
               <li className="nav-item">
                 <ul className="nav nav-treeview">
