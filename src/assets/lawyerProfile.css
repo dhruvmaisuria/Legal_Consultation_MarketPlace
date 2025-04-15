@@ -176,3 +176,70 @@
     background-color: #0056b3;
   }
   
+  @media (max-width: 1024px) {
+    .lawyer-profile-container {
+      padding: 15px;
+      margin: 20px auto;
+    }
+  
+    .lawyer-info-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .lawyer-profile-details {
+      width: 100%;
+    }
+  
+    .lawyer-profile-img {
+      width: 130px;
+      height: 130px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .lawyer-profile-container {
+      max-width: 95%;
+      padding: 10px;
+    }
+  
+    .lawyer-profile-img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .lawyer-profile-details h2 {
+      font-size: 1.4rem;
+    }
+  
+    .toggle-reviews-btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .lawyer-profile-container {
+      padding: 10px 5px;
+    }
+  
+    .lawyer-profile-img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .lawyer-profile-details h2 {
+      font-size: 1.2rem;
+    }
+  
+    .review-card {
+      padding: 12px 14px;
+    }
+  
+    .toggle-reviews-btn {
+      font-size: 13px;
+      padding: 8px 12px;
+    }
+  }
+  

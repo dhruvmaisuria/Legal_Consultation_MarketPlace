@@ -182,9 +182,9 @@ export const LawyerNavbar = ({ toggleSidebar, isSidebarOpen }) => {
             </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-white" href="#">
+            <Link className="nav-link text-white" to="/contactUs">
               Contact
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
             <button onClick={handleLogout} className="btn btn-danger ms-2">
@@ -224,14 +224,14 @@ export const LawyerNavbar = ({ toggleSidebar, isSidebarOpen }) => {
             }}
           >
             <li>
-              <Link className="dropdown-item text-white" to="/lawyer/lawyerBashBoard">
+              <Link className="dropdown-item text-white" to="/lawyer/lawyerDashBoard">
                 Home
               </Link>
             </li>
             <li>
-              <a className="dropdown-item text-white" href="#">
+              <Link className="dropdown-item text-white" to="/contactUs">
                 Contact
-              </a>
+              </Link>
             </li>
             <li>
               <button

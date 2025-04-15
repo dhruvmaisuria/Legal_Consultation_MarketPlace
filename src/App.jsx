@@ -53,6 +53,7 @@ import MyProfile from './components/lawyer/MyProfile'
 import PaymentHistory from './components/admin/PaymentHistory'
 import { AdminLogin } from './components/common/AdminLogin'
 import AdminReviewManagement from './components/admin/AdminReviewManagement'
+import AdminPrivateRoute from './hooks/AdminPrivateRoutes'
 
 
 
@@ -127,6 +128,7 @@ function App() {
         <Route path='/adminLogin' element={<AdminLogin/>}></Route>
         
 
+        <Route path='' element={<AdminPrivateRoute/>}>
         <Route path='/admin' element={<AdminSideBar/>}>
         <Route path='AdminDashBoard' element={<AdminDashBoard/>}></Route>
         <Route path='calendar' element={<AdminAppointmentsCalendar/>}></Route>
@@ -136,7 +138,7 @@ function App() {
         <Route path='getAllPayments' element={<PaymentHistory/>}></Route>
         <Route path='getAllReviews' element={<AdminReviewManagement/>}></Route>
         </Route>
-        
+        </Route> 
 
         <Route path="" element={<UserPrivateRoute/>}>
         <Route path='/user' element={<UserSidebar/>}>
