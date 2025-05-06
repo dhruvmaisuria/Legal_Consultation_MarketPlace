@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 
+
+
 // import './App.css'
 import "./assets/adminlte.css"
 import "./assets/adminlte.min.css"
@@ -98,7 +100,8 @@ function App() {
 
   const [count, setCount] = useState(0)
 
-  axios.defaults.baseURL = "http://localhost:3010";
+  // axios.defaults.baseURL = "http://localhost:3010";
+  axios.defaults.baseURL = import.meta.env.VITE_REACT_APP_API_BASE_URL;
 
   const location = useLocation();
 
