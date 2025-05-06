@@ -21,7 +21,6 @@
     "bootstrap": "^5.3.3",
     "leaflet": "^1.9.4",
     "legal-consultation-marketplace": "file:",
-    "mdb-ui-kit": "^8.2.0",
     "react": "^19.0.0",
     "react-big-calendar": "^1.18.0",
     "react-bootstrap": "^2.10.9",
