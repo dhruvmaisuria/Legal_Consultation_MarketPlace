@@ -281,6 +281,7 @@ export const UserSidebar = () => {
                   <p>My Payments</p>
                 </Link>
               </li>
+              </li>
               <li className="nav-item">
                 <ul className="nav nav-treeview">
                   <li className="nav-item">

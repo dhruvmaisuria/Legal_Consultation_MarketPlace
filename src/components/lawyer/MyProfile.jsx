@@ -43,6 +43,7 @@ const MyProfile = () => {
   const visibleReviews = showAllReviews ? reviews : reviews.slice(0, 3);
 
   return (
+    <div className="page-background">
     <div className="lawyer-profile-container">
       <div className="lawyer-info-card">
         <img
@@ -83,6 +84,7 @@ const MyProfile = () => {
           </div>
         )}
       </div>
+    </div>
     </div>
   );
 };

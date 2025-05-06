@@ -1,3 +1,6 @@
+
+
+
 // import React from "react";
 // import { useForm } from "react-hook-form";
 // import { Button, Container, Card, Form } from "react-bootstrap";
@@ -20,14 +23,9 @@
 //       console.log(res.data);
 
 //       if (res.status === 200) {
-//         toast.success('Login Successfully', {
+//         toast.success("Login Successfully", {
 //           position: "top-center",
 //           autoClose: 5000,
-//           hideProgressBar: false,
-//           closeOnClick: false,
-//           pauseOnHover: true,
-//           draggable: true,
-//           progress: undefined,
 //           theme: "dark",
 //           transition: Bounce,
 //         });
@@ -42,39 +40,34 @@
 //         }
 //       }
 //     } catch (error) {
-//       if (error.response && error.response.status === 403) {
-//         toast.error('Your account is blocked by the admin.', {
+//       const status = error?.response?.status;
+//       const message = error?.response?.data?.message;
+
+//       if (status === 403) {
+//         toast.error("Your account is blocked by the admin.", {
 //           position: "top-center",
 //           autoClose: 5000,
-//           hideProgressBar: false,
-//           closeOnClick: false,
-//           pauseOnHover: true,
-//           draggable: true,
-//           progress: undefined,
 //           theme: "dark",
 //           transition: Bounce,
 //         });
-//       } else if (error.response && error.response.status === 404) {
-//         toast.error('Invalid Credentials !!', {
+//       } else if (status === 404) {
+//         toast.error("Email not found. Please register first.", {
 //           position: "top-center",
 //           autoClose: 5000,
-//           hideProgressBar: false,
-//           closeOnClick: false,
-//           pauseOnHover: true,
-//           draggable: true,
-//           progress: undefined,
+//           theme: "dark",
+//           transition: Bounce,
+//         });
+//       } else if (status === 401) {
+//         toast.error("Invalid credentials!", {
+//           position: "top-center",
+//           autoClose: 5000,
 //           theme: "dark",
 //           transition: Bounce,
 //         });
 //       } else {
-//         toast.error('Something went wrong. Please try again.', {
+//         toast.error("Something went wrong. Please try again.", {
 //           position: "top-center",
 //           autoClose: 5000,
-//           hideProgressBar: false,
-//           closeOnClick: false,
-//           pauseOnHover: true,
-//           draggable: true,
-//           progress: undefined,
 //           theme: "dark",
 //           transition: Bounce,
 //         });
@@ -109,24 +102,11 @@
 //         backgroundSize: "cover",
 //       }}
 //     >
-//       <ToastContainer
-//         position="top-center"
-//         autoClose={5000}
-//         hideProgressBar={false}
-//         newestOnTop={false}
-//         closeOnClick={false}
-//         rtl={false}
-//         pauseOnFocusLoss
-//         draggable
-//         pauseOnHover
-//         theme="dark"
-//         transition={Bounce}
-//       />
+//       <ToastContainer />
 //       <Card className="p-4 shadow-lg" style={{ maxWidth: "400px", width: "100%" }}>
 //         <Card.Body>
 //           <h2 className="text-center mb-4">Sign In</h2>
 //           <Form onSubmit={handleSubmit(submitHandler)}>
-//             {/* Email Input */}
 //             <Form.Group className="mb-3">
 //               <Form.Label>Your Email</Form.Label>
 //               <Form.Control
@@ -138,7 +118,6 @@
 //               )}
 //             </Form.Group>
 
-//             {/* Password Input */}
 //             <Form.Group className="mb-3">
 //               <Form.Label>Password</Form.Label>
 //               <Form.Control
@@ -154,7 +133,6 @@
 //               <Link to="/forgotPassword">Forgot password?</Link>
 //             </div>
 
-//             {/* Submit Button */}
 //             <Button variant="primary" className="w-100 mb-3" type="submit">
 //               Log In
 //             </Button>
@@ -267,17 +245,32 @@ export const Login = () => {
       className="d-flex align-items-center justify-content-center min-vh-100"
       style={{
         backgroundImage:
-          "url(https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp)",
+          "url(https://assets.onecompiler.app/43dpwcgs5/43fxv4f85/DeWatermark.ai_1745660242878.png)",
         backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        fontFamily: "'Poppins', sans-serif",
       }}
     >
       <ToastContainer />
-      <Card className="p-4 shadow-lg" style={{ maxWidth: "400px", width: "100%" }}>
+      <Card
+        className="p-4 shadow-lg"
+        style={{
+          maxWidth: "450px",
+          width: "100%",
+          borderRadius: "20px",
+          background: "rgba(255, 255, 255, 0.75)",
+          backdropFilter: "blur(10px)",
+          boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
+        }}
+      >
         <Card.Body>
-          <h2 className="text-center mb-4">Sign In</h2>
+          <h2 className="text-center mb-4" style={{ fontWeight: "bold", color: "#0d6efd" }}>
+            Sign In
+          </h2>
           <Form onSubmit={handleSubmit(submitHandler)}>
             <Form.Group className="mb-3">
-              <Form.Label>Your Email</Form.Label>
+              <Form.Label style={{ fontWeight: "500" }}>Email</Form.Label>
               <Form.Control
                 type="email"
                 {...register("email", ValidationSchema.emailValidator)}
@@ -288,7 +281,7 @@ export const Login = () => {
             </Form.Group>
 
             <Form.Group className="mb-3">
-              <Form.Label>Password</Form.Label>
+              <Form.Label style={{ fontWeight: "500" }}>Password</Form.Label>
               <Form.Control
                 type="password"
                 {...register("password", ValidationSchema.passwordValidator)}
@@ -299,15 +292,31 @@ export const Login = () => {
             </Form.Group>
 
             <div className="text-center mb-2">
-              <Link to="/forgotPassword">Forgot password?</Link>
+              <Link to="/forgotPassword" className="text-decoration-none text-primary fw-semibold">
+                Forgot password?
+              </Link>
             </div>
 
-            <Button variant="primary" className="w-100 mb-3" type="submit">
+            <Button
+              variant="primary"
+              className="w-100 mb-3"
+              type="submit"
+              size="lg"
+              style={{
+                background: "linear-gradient(90deg, #4facfe 0%, #00f2fe 100%)",
+                border: "none",
+                fontWeight: "600",
+                letterSpacing: "1px",
+              }}
+            >
               Log In
             </Button>
 
             <p className="text-center">
-              Don't have an account? <Link to="/signup">Register here</Link>
+              Don't have an account?{" "}
+              <Link to="/signup" className="text-decoration-none fw-semibold">
+                Register here
+              </Link>
             </p>
           </Form>
         </Card.Body>

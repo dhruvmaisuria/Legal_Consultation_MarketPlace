@@ -1,0 +1,83 @@
+
+
+/* Query Page Wrapper */
+.query-page-wrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url('https://assets.onecompiler.app/43dpwcgs5/43fy7485m/DeWatermark.ai_1745684240135.png') no-repeat center center/cover;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+/* Query Container */
+.query-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Accordion Items */
+.accordion-item {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 1rem;
+}
+
+.accordion-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Accordion Button */
+.accordion-button {
+  background: transparent;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: none;
+  width: 100%;
+}
+
+.accordion-button:not(.collapsed) {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Accordion Body */
+.accordion-body {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 1rem;
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* Delete Button */
+.btn-outline-danger {
+  border-color: #ff6b6b;
+  color: #ff6b6b;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-danger:hover {
+  background-color: #ff6b6b;
+  color: white;
+}
+

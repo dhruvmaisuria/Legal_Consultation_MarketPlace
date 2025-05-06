@@ -54,6 +54,8 @@ import PaymentHistory from './components/admin/PaymentHistory'
 import { AdminLogin } from './components/common/AdminLogin'
 import AdminReviewManagement from './components/admin/AdminReviewManagement'
 import AdminPrivateRoute from './hooks/AdminPrivateRoutes'
+import { AdminResetPassword } from './components/common/AdminResetPassword'
+import { AdminForgotPassword } from './components/common/AdminForgotPassword'
 
 
 
@@ -75,7 +77,9 @@ const shouldApplyAppWrapper = (pathname) => {
     '/lawyerResetPassword',
     '/selectRole',
     '/selectLoginRole',
-    '/adminLogin'
+    '/adminLogin',
+    '/adminForgotPassword',
+    '/adminResetPassword'
     
 
   ];
@@ -126,6 +130,8 @@ function App() {
         <Route path='/selectRole' element={<SelectRole/>}></Route>
         <Route path='/selectLoginRole' element={<SelectLoginRole/>}></Route>
         <Route path='/adminLogin' element={<AdminLogin/>}></Route>
+        <Route path='/adminForgotPassword' element={<AdminForgotPassword/>}></Route>
+        <Route path='/adminResetPassword/:token' element={<AdminResetPassword/>}></Route>
         
 
         <Route path='' element={<AdminPrivateRoute/>}>

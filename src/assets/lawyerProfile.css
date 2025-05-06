@@ -243,3 +243,13 @@
     }
   }
   
+
+  .page-background {
+    min-height: 100vh;
+    background: url('https://assets.onecompiler.app/43dpwcgs5/43g35gabe/DeWatermark.ai_1745751697869.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
