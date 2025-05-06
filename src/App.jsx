@@ -7,6 +7,8 @@ import viteLogo from '/vite.svg'
 // import './App.css'
 import "./assets/adminlte.css"
 import "./assets/adminlte.min.css"
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+
 
 import { Route, Routes, useLocation } from 'react-router-dom'
 import { Login } from './components/common/Login'
