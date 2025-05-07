@@ -1,99 +1,6 @@
-/* .lawyer-profile-container {
-    display: flex;
-    justify-content: center;
-    padding: 40px;
-    background: linear-gradient(to right, #f8f9fa, #e9ecef);
-    min-height: 100vh;
-  }
-  
-  .lawyer-profile-card {
-    width: 100%;
-    max-width: 500px;
-    padding: 20px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-    border-radius: 15px;
-  }
-  
-  .profile-image {
-    border-radius: 10px;
-    height: 300px;
-    object-fit: cover;
-  }
-  
-  .profile-loader,
-  .profile-error {
-    text-align: center;
-    padding: 50px;
-    font-size: 1.2rem;
-  }
-   */
 
-
-   /* .lawyer-profile-container {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  .lawyer-info-card {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    margin-bottom: 30px;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 20px;
-  }
-  
-  .lawyer-profile-img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid #ffbb33;
-  }
-  
-  .lawyer-profile-details {
-    flex: 1;
-  }
-  
-  .lawyer-profile-details h2 {
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .review-section {
-    margin-top: 30px;
-  }
-  
-  .review-section h3 {
-    margin-bottom: 20px;
-    color: #444;
-    font-weight: 600;
-  }
-  
-  .review-list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .review-card {
-    background-color: #f9f9f9;
-    padding: 15px 20px;
-    border-radius: 12px;
-    border-left: 5px solid #ffbb33;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  }
-  
-  .review-card p {
-    margin: 5px 0;
-    color: #333;
-  }
-   */
-
+   
+/* 
 
    .lawyer-profile-container {
     max-width: 900px;
@@ -252,4 +159,164 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
+  } */
+
+  .lawyer-profile-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    color: #f1f1f1;
   }
+  
+  .lawyer-info-card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #444;
+    padding-bottom: 20px;
+  }
+  
+  .lawyer-profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ffbb33;
+  }
+  
+  .lawyer-profile-details {
+    flex: 1;
+  }
+  
+  .lawyer-profile-details h2 {
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .review-section {
+    margin-top: 30px;
+  }
+  
+  .review-section h3 {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  
+  .review-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .review-card {
+    background-color: #2b2b2b;
+    padding: 15px 20px;
+    border-radius: 12px;
+    border-left: 5px solid #ffbb33;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+  }
+  
+  .review-card p {
+    margin: 5px 0;
+    color: #dddddd;
+  }
+  
+  .toggle-reviews-btn {
+    margin-top: 15px;
+    align-self: flex-start;
+    background-color: #646cff;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-reviews-btn:hover {
+    background-color: #4e4ed1;
+  }
+  
+  @media (max-width: 1024px) {
+    .lawyer-profile-container {
+      padding: 15px;
+      margin: 20px auto;
+    }
+  
+    .lawyer-info-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .lawyer-profile-details {
+      width: 100%;
+    }
+  
+    .lawyer-profile-img {
+      width: 130px;
+      height: 130px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .lawyer-profile-container {
+      max-width: 95%;
+      padding: 10px;
+    }
+  
+    .lawyer-profile-img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .lawyer-profile-details h2 {
+      font-size: 1.4rem;
+    }
+  
+    .toggle-reviews-btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .lawyer-profile-container {
+      padding: 10px 5px;
+    }
+  
+    .lawyer-profile-img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .lawyer-profile-details h2 {
+      font-size: 1.2rem;
+    }
+  
+    .review-card {
+      padding: 12px 14px;
+    }
+  
+    .toggle-reviews-btn {
+      font-size: 13px;
+      padding: 8px 12px;
+    }
+  }
+  
+  .page-background {
+    min-height: 100vh;
+    background: url('https://assets.onecompiler.app/43dpwcgs5/43g35gabe/DeWatermark.ai_1745751697869.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
