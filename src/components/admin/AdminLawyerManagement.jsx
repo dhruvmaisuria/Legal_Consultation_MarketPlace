@@ -25,7 +25,7 @@ const AdminLawyerManagement = () => {
 
   return (
     <div className="view-lawyers-container">
-      <h2 className="lawyer-heading" style={{ textAlign: 'center' }}>Manage Lawyers</h2>
+      <h2 className="lawyer-heading" style={{ textAlign: 'center',color:"#4facfe" }}>Manage Lawyers</h2>
 
       {loading ? (
         <div className="loader-container">

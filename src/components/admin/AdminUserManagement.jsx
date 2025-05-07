@@ -474,7 +474,7 @@ const AdminUserManagement = () => {
   return (
     <Container className="py-4">
       <ToastContainer />
-      <h2 className="mb-4 text-center">User Management</h2>
+      <h2 className="mb-4 text-center" style={{color:"#4facfe"}}>User Management</h2>
 
       {loading ? (
         <div className="d-flex justify-content-center">
@@ -522,7 +522,7 @@ const AdminUserManagement = () => {
       {/* Modal for full user details */}
       <Modal show={showModal} onHide={() => setShowModal(false)} centered>
         <Modal.Header closeButton>
-          <Modal.Title>User Details</Modal.Title>
+          <Modal.Title style={{color:"black"}}>User Details</Modal.Title>
         </Modal.Header>
         <Modal.Body style={{color:"black"}}>
           {selectedUser && (

@@ -109,7 +109,7 @@ const PaymentHistory = () => {
 
   return (
     <div className="container mt-4">
-      <h3 className="mb-4 text-center">All Payment Transactions</h3>
+      <h3 className="mb-4 text-center" style={{color:"#4facfe"}}>All Payment Transactions</h3>
 
       {loading ? (
         <div className="text-center">

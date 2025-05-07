@@ -103,7 +103,7 @@ const AdminDashBoard = () => {
   return (
     <Container className={`mt-4 ${darkMode ? "bg-dark text-light" : ""}`}>
       <div className="d-flex justify-content-between align-items-center mb-4">
-        <h2 className="fw-bold">Admin Dashboard</h2>
+        <h2 className="fw-bold" style={{color:"#4facfe"}}>Admin Dashboard</h2>
         <Button
           variant={darkMode ? "light" : "dark"}
           onClick={toggleDarkMode}

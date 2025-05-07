@@ -91,7 +91,7 @@ const AdminReviewManagement = () => {
 
   return (
     <div className="container py-5">
-      <h2 className="text-center mb-5">All Reviews</h2>
+      <h2 className="text-center mb-5" style={{color:"#4facfe"}}>All Reviews</h2>
 
       {reviews.length === 0 ? (
         <div className="text-center">
