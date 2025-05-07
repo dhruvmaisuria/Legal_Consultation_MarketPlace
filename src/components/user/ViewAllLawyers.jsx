@@ -68,7 +68,7 @@ const ViewAllLawyers = () => {
 
   return (
     <div className="view-lawyers-container">
-      <h2 className="lawyer-heading" style={{textAlign:'center'}}>All Lawyers</h2>
+      <h2 className="lawyer-heading" style={{textAlign:'center',color:"#4facfe"}}>All Lawyers</h2>
       {loading ? (
         <div className="loader-container">
           <Spinner animation="border" variant="warning" />
