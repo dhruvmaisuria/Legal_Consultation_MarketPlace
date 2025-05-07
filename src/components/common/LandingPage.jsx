@@ -325,9 +325,9 @@ export const LandingPage = () => {
             <div className="col-md-6">
               <div className="detail-box">
                 <div className="heading_container">
-                  <h2 className='about'>About Us</h2>
+                  <h2 className='about' style={{color:"#4facfe"}}  >About Us</h2>
                 </div>
-                <p>
+                <p style={{color:"black"}}>
                 Legal Consultation Marketplace is your trusted digital platform connecting clients with verified legal professionals.
                 Whether you need legal advice, book consultations, or resolve legal matters, our platform makes the process effortless.
                 Additionally, we empower users by educating them on their legal rights and procedures.

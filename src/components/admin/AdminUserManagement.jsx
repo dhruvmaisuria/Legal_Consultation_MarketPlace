@@ -524,7 +524,7 @@ const AdminUserManagement = () => {
         <Modal.Header closeButton>
           <Modal.Title>User Details</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body style={{color:"black"}}>
           {selectedUser && (
             <>
               <p><strong>Name:</strong> {selectedUser.firstName} {selectedUser.lastName}</p>
