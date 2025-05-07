@@ -265,7 +265,7 @@ export const AddAppointment = () => {
       });
 
       const options = {
-        key:import.meta.env.RAZORPAY_KEY,
+        key:"rzp_test_kiBRyyCS7A1LxN",
         amount: order.amount,
         currency: order.currency,
         name: "Legal Consultation",
