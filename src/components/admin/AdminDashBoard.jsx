@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import axios from "axios";    
+import AdminDashboardCharts from "./AdminDashboardCharts";
+
 import {
   Container,
   Row,
@@ -10,7 +12,7 @@ import {
   Button,
   ButtonGroup,
 } from "react-bootstrap";
-import { AdminDashboardCharts } from "./AdminDashboardCharts";
+
 import {
   FaUser,
   FaGavel,
