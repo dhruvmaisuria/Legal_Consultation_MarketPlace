@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";    
-import AdminDashboardCharts from "./AdminDashboardCharts";
+import AdminDashBoardCharts from './AdminDashBoardCharts'; // Adjust path as needed
 
 import {
   Container,
@@ -134,7 +134,7 @@ const AdminDashBoard = () => {
       </Row>
 
       <div className="mt-5">
-        <AdminDashboardCharts darkMode={darkMode} />
+        <AdminDashBoardCharts darkMode={darkMode} />
       </div>
     </Container>
   );
