@@ -47,7 +47,7 @@ import ViewAllLawyers from './components/user/ViewAllLawyers'
 import LawyerProfile from './components/user/LawyerProfile'
 import ViewMyPayments from './components/user/ViewMyPayments'
 
-import AdminAppointmentsCalendar from './components/admin/AdminAppointmentsCalendar'
+
 import { AdminSideBar } from './components/layouts/AdminSideBar'
 import AdminDashBoard from './components/admin/AdminDashBoard'
 import AdminUserManagement from './components/admin/AdminUserManagement'
@@ -142,7 +142,7 @@ function App() {
         <Route path='' element={<AdminPrivateRoute/>}>
         <Route path='/admin' element={<AdminSideBar/>}>
         <Route path='AdminDashBoard' element={<AdminDashBoard/>}></Route>
-        <Route path='calendar' element={<AdminAppointmentsCalendar/>}></Route>
+        
         <Route path='userManagement' element={<AdminUserManagement/>}></Route>
         <Route path='lawyerManagement' element={<AdminLawyerManagement/>}></Route>
         <Route path='lawyerProfile/:lawyerId' element={<LawyerProfileForAdmin/>}></Route>

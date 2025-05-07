@@ -201,12 +201,12 @@ export const AdminSideBar = () => {
                       <p>View All Lawyers</p>
                     </Link>
                   </li>
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <Link to="/admin/calendar" className="nav-link">
                       <i className="nav-icon bi bi-circle" />
                       <p>View All Appointments</p>
                     </Link>
-                  </li>
+                  </li> */}
                   <li className="nav-item">
                     <Link to="/admin/getAllPayments" className="nav-link">
                       <i className="nav-icon bi bi-circle" />
