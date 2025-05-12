@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import '../../assets/lawyerProfile.css';
+import '../../assets/lawyerProfile.css'; 
 import { toast } from 'react-toastify';
 
 const LawyerProfileForAdmin = () => {

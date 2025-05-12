@@ -144,7 +144,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import '../../assets/lawyerProfile.css';
+import '../../assets/lawyerProfile.css'; 
 
 const LawyerProfile = () => {
   const { lawyerId } = useParams();
