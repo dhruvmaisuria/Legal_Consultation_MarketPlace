@@ -177,7 +177,7 @@ export const UserDashBoard = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get("http://localhost:3010/lawyer/topRated")
+    axios.get("/lawyer/topRated")
       .then((res) => {
         setTopLawyers(res.data.data || []);
         setLoading(false);
