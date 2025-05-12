@@ -28,7 +28,7 @@ const MyProfile = () => {
   useEffect(() => {
     const fetchReviews = async () => {
       try {
-        const res = await axios.get(`http://localhost:3010/getReviewsByLawyerId/${lawyerId}`);
+        const res = await axios.get(`/getReviewsByLawyerId/${lawyerId}`);
         setReviews(res.data.data || []);
       } catch (err) {
         console.error('Error fetching reviews:', err);

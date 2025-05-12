@@ -156,7 +156,7 @@ const LawyerProfile = () => {
   useEffect(() => {
     const fetchLawyer = async () => {
       try {
-        const res = await axios.get(`http://localhost:3010/lawyer/${lawyerId}`);
+        const res = await axios.get(`/lawyer/${lawyerId}`);
         setLawyer(res.data.data);
         setLoading(false);
       } catch (err) {
@@ -171,7 +171,7 @@ const LawyerProfile = () => {
   useEffect(() => {
     const fetchReviews = async () => {
       try {
-        const res = await axios.get(`http://localhost:3010/getReviewsByLawyerId/${lawyerId}`);
+        const res = await axios.get(`/getReviewsByLawyerId/${lawyerId}`);
         setReviews(res.data.data || []);
       } catch (err) {
         console.error('Error fetching reviews:', err);
