@@ -119,4 +119,9 @@ LandingPage.css
       width: 70px;
     }
   }
+  @media (max-width: 768px) {
+    .about_section .detail-box p {
+      color: white !important;
+    }
+  }
   
