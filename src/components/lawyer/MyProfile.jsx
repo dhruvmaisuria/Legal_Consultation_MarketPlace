@@ -13,7 +13,7 @@ const MyProfile = () => {
   useEffect(() => {
     const fetchLawyer = async () => {
       try {
-        const res = await axios.get(`http://localhost:3010/lawyer/${lawyerId}`);
+        const res = await axios.get(`/lawyer/${lawyerId}`);
         setLawyer(res.data.data);
         setLoading(false);
       } catch (err) {
